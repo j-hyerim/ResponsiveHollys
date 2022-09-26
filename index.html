@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hollys</title>
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+    <link rel="stylesheet" href="./css/mobile.css" type="text/css">
+    <link rel="stylesheet" href="./css/pc.css" type="text/css">
+    <link rel="stylesheet" href="./css/tablet.css" type="text/css">
+    <link rel="stylesheet" href="./css/swiper.css" type="text/css">
+    <link rel="stylesheet" href="./css/flexslider.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="./script/swiper.js"></script>
+    <script src="./script/prefixfree.min.js"></script>
+      <!-- 플렉스 슬라이드 서식 -->
+  <link href="./css/flexslider.css" rel="stylesheet" type="text/css">
+
+  <!-- 제이쿼리 소스 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <!-- 플렉스 슬라이드 제이쿼리 소스 -->
+  <script src="./script/jquery.flexslider.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="./img/f.ico" />
+</head>
+<body>
+    <input type="checkbox" id="toggle">
+    <header>
+        <div class="header_inner">
+            <h1><a href="index.html"><img src="./img/logom.jpg" alt="할리스로고mobile"></a></h1>
+            <h1><a href="index.html"><img src="./img/logot.jpg" alt="할리스로고teblet"></a></h1>
+            <h1><a href="index.html"><img src="./img/logopc.jpg" alt="할리스로고pc"></a></h1>
+            <!-- 메뉴 아이콘 -->
+
+            <!-- <a href="login.html"><i class="fa-solid fa-user" ></i></a>  -->
+            <label for="toggle" class="toggle_btn"><i class="fas fa-bars" ></i></label>
+
+            <!--m login -->
+            <div class="mlogin">
+              <input type="checkbox" id="toggle1">
+              <label class="fa-solid fa-user" for="toggle1"></label>
+              <form name="" method="" action="">
+                <fieldset id="login_form">
+                  <legend>Login</legend>
+                  <label class="fas fa-times" for="toggle1" id="close"></label>
+                  <p><label for="id">아이디</label>
+                    <input type="text" id="id" placeholder="  아이디를 입력해주세요"></p>
+                  <p><label for="pw">패스워드</label>
+                    <input type="password" id="pw" placeholder="  패스워드를 입력해주세요"></p>
+                  <p><input type="button" value="로그인" onclick="login_Check();"></p>
+                </fieldset>
+              </form>
+            </div>
+            
+            
+            <!--pc login -->
+            <div class="pclogin">
+              <!-- <input type="checkbox" id="login1"> -->
+              <a href="login.html"><p id="login1">LOGIN</p></a>
+              <a href="login.html"><p id="join1">JOIN</p></a>
+              <!-- <label class="fa-solid fa-user" for="login1"></label> -->
+              <!-- <form name="" method="" action="">
+                <fieldset id="login_form">
+                  <legend>Login</legend>
+                  <label class="fas fa-times" for="login1" id="close"></label>
+                  <p><label for="id">아이디</label>
+                    <input type="text" id="id" placeholder="  아이디를 입력해주세요"></p>
+                  <p><label for="pw">패스워드</label>
+                    <input type="password" id="pw" placeholder="  패스워드를 입력해주세요"></p>
+                  <p><input type="button" value="로그인" onclick="login_Check();"></p>
+                </fieldset>
+              </form> -->
+            </div>
+            
+      <!-- 메인메뉴 -->
+      <nav class="gnb">
+        <label for="toggle"><i class="fas fa-times"></i></label>
+        <ul>
+            <li><div><a href="drink.html" title="메뉴">메뉴</a><label for="m1"><i class="fas fa-angle-down"></i></label></div>
+                <input type="checkbox" id="m1">
+                <!-- <li><a href="drink.html" title="메뉴">메뉴<i class="fas fa-angle-down"></i></a> -->
+                    <ul class="sub">
+                        <li><a href="drink.html" title="음료">음료</a></li>
+                        <li><a href="food.html" title="푸드">푸드</a></li>
+                        <li><a href="md.html" title="상품">브랜드상품</a></li>
+                    </ul>   
+            </li>
+            
+            <li><div><a href="card.html" title="브랜드 소개">멤버십</a><label for="m2"><i class="fas fa-angle-down"></i></label></div>
+                <input type="checkbox" id="m2">
+                <ul class="sub">
+                <li><a href="card.html" title="할리스카드/콘">할리스카드/콘</a></li>
+                <li><a href="list.html" title="구매내역">구매내역</a></li>
+                <li><a href="smart.html" title="스마트오더">스마트오더</a></li>
+                <li><a href="plus.html" title="혜택">혜택</a></li>
+                </ul>
+            </li>
+            
+            <li><div><a href="notice.html" title="이벤트공지">이벤트공지</a><label for="m3"><i class="fas fa-angle-down"></i></label></div>
+                <input type="checkbox" id="m3">
+                <!-- <li><a href="notice.html" title="이벤트공지">이벤트공지<i class="fas fa-angle-down"></i></a> -->
+                <ul class="sub">
+                <li><a href="notice.html" title="공지">공지</a></li>
+                <li><a href="event.html" title="이벤트">이벤트</a></li>
+                </ul>
+          </li>
+  
+            <li><div><a href="market.html" title="매장">매장</a><label for="m4"><i class="fas fa-angle-down"></i></label></div>
+                <input type="checkbox" id="m4">
+                <!-- <li><a href="market.html" title="매장">매장<i class="fas fa-angle-down"></i></a> -->
+                <ul class="sub">
+                <li><a href="market.html" title="매장검색">매장검색</a></li>
+                <li><a href="finemarket.html" title="매장찾기">매장찾기</a></li>
+                <li><a href="marketq.html" title="입점문의">입점문의</a></li>
+                </ul>
+          </li>
+        </ul>
+      </nav>
+            
+        </div>
+    </header>
+    <main>
+        <!-- 슬라이드 -->
+        
+        <div class="flexslider mslide">
+          <ul class="slides">
+            <li><a href="#" title="이벤트1"><img src="./img/mainBanner_m1.jpg" alt="사과차"></a></li>
+            <li><a href="#" title="이벤트2"><img src="./img/mainBanner_m2.jpg" alt="흑임자크림라떼"></a></li>
+            <li><a href="#" title="이벤트3"><img src="./img/mainBanner_m3.jpg" alt="말차라떼"></a></li>
+          </ul>
+        </div>
+        <div class="flexslider pcslide">
+          <ul class="slides">
+            <li><a href="#" title="이벤트1"><img src="./img/mainBanner1.jpg" alt="사과차"></a></li>
+            <li><a href="#" title="이벤트2"><img src="./img/mainBanner2.jpg" alt="메인02"></a></li>
+            <li><a href="#" title="이벤트3"><img src="./img/mainBanner3.jpg" alt="메인03"></a></li>
+          </ul>
+        </div>
+        <div class="flexslider tslide">
+          <ul class="slides">
+            <li><a href="#" title="이벤트1"><img src="./img/mainBanner1t.jpg" alt="사과차"></a></li>
+            <li><a href="#" title="이벤트2"><img src="./img/mainBanner2t.jpg" alt="메인02"></a></li>
+            <li><a href="#" title="이벤트3"><img src="./img/mainBanner3t.jpg" alt="메인03"></a></li>
+          </ul>
+        </div>
+
+        <article class="fade">
+          <div class="slide1">
+            <h2>당신을 위한 <span>Hollys</span> 신메뉴</h2>
+              <div class="swiper new_wrapper">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide"><a href="#" title="신메뉴1"><img src="./img/fade1.jpg" alt="새로운 사과차" id="fade1"><br>사랑을 나누는 사과차</a></div>
+                      <div class="swiper-slide"><a href="#" title="신메뉴2"><img src="./img/fade2.jpg" alt="새로운 달차" id="fade2"><br>달지 않은 은은한 밀크티</a></div>
+                      <div class="swiper-slide"><a href="#" title="신메뉴3"><img src="./img/fade3.jpg" alt="새로운 흑임자라떼" id="fade3"><br>흑임자의 쌉쌀함을 간직한 흑임자티</a></div>
+                      <div class="swiper-slide"><a href="#" title="신메뉴4"><img src="./img/fade4.jpg" alt="새로운 자두스무디" id="fade4"><br>자두는 설렌다 자두 스무디</a></div>
+                      <div class="swiper-slide"><a href="#" title="신메뉴5"><img src="./img/fade5.jpg" alt="새로운 망고스무디" id="fade5"><br>망고는 달콤해 망코 슬러쉬</a></div>
+                      <div class="swiper-slide"><a href="#" title="신메뉴6"><img src="./img/fade6.jpg" alt="새로운 녹차,한라봉스무디" id="fade6"><br>녹차와 한라봉은 행복 스무디</a></div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+              </div>
+          </div>
+        </article>
+<!-- 할리스 찾기 -->
+        <article class="map">
+          <div><h2></i>리본장식이 된 <span>Hollys</span>를  찾아보세요!</h2>
+          <p>새롭지만 심플함을 추구하는 저희 할리스는 여러분들에게 작은 이벤트를 준비하엿습니다.<br><br>
+          여러분의 학습효과를 증진시켜드릴 음료한잔과 여러분이 편하게 쉴 수 있는 그런 장소.<br><br>
+        골든리본을 찾아 이벤트 게시글에 업로드 하시면 작은 선물이 기다립니다.</p><br></div>
+        <form action="a.php">
+          <a href="#" title="map"><img src="./img/map.jpg" alt=""></a>
+          <a href="map.html"><input type="button" value="HOLLYS 매장 찾기" onclick=""></a>
+        </form>
+        </article>
+
+        <article class="bc1">
+          <div>
+          <h2>dear. You</h2>
+          <p>짧고 긴 삶을 살면서 스스로에게 휴식을 얼마나 주셨나요?<br>
+              단 쿠기와 씁쓸한 커피를 마시면서 가만히<br>
+              사색에 잠겨본 추억이 있으신가요?<br>
+              <br>
+              가벼운 텀블러에 커피를 담고 하늘에 휘날리는 꽃잎을 <br>
+              구경해보신 적이 있으신가요?<br>
+              <br>
+              오늘 하루는 당신에게 휴식을 선물해주세요<br>
+              <br>
+              HOLLYS</p>
+          </div>
+        </article>
+        <!-- <article>
+          <h2>할리스 매장찾기</h2>
+        </article> -->
+        <section class="grid">
+            <article class="card">
+              <div class="box1">
+                <h2>Hollys <p id="subn">카드</p></h2>
+                <a href="#" title="card">
+                  <p>Hollys의 쌓여가는 포인트를 나눠드립니다!</p>
+                  <p>카드 사용시 추첨을 통해 할리콘을 증정합니다.</p>
+                  <p>화려해진 point 제도를 확인해보세요.</p>
+                  <p>모든 혜택이 여러분들을 위해 더욱 풍성해졌습니다.</p>
+                  <img src="./img/c.jpg" alt="card">
+                </a>
+              </div>
+                
+            </article>
+            <article class="membership">
+                <div class="box1">
+                  <h2>Hollys <p id="subn">멤버십</p></h2>
+                  <a href="#" title="card">
+                    <p>Hollys의 구체적인 멤버십!</p>
+                    <p>결코 쓸모없지 않습니다.</p>
+                    <p>더욱 즐거워진 GOLD 혜택을 확인해보세요</p>
+                    <p>다양해진 이벤트와 힐리콘을 드려요!</p>
+                    <img src="./img/m.jpg" alt="membership">
+                  </a>
+                </div>
+            </article>
+              </article>
+              <article class="news">
+                  <div class="nev">
+                      <h2><i class="far fa-envelope-open"></i> HOLLYS NEWS</h2>
+                      <ul class="newsi">
+                          <li><a href="#">- 새로운 시즌 ‘골든라벨’ 주황빛 과일과 콜라보맺어 '리본을 찾아라' 행사 진행중<i class="fas fa-angle-right"></i></a></li>
+                          <li><a href="#">- 젊은 층에게 인기있는 피부비결! 할리스에서 해결하세요<i class="fas fa-angle-right"></i></a></li>
+                          <li><a href="#">- 너도 나도 hollys 인증, 선두주자가 된 hollys!<i class="fas fa-angle-right"></i></a></li>
+                          <li><a href="#">- 할리스 체인점 10000개 돌파.<i class="fas fa-angle-right"></i></li>
+                          <li><a href="#">- 할리너들의 선택으로 만드는 새로운 레시피!<i class="fas fa-angle-right"></i></a></li>
+                          <li><a href="#">- 레시피 당첨자 발표합니다. ‘정00’,  ‘성00’, ’용00'님 외 20명 축하드립니다.<i class="fas fa-angle-right"></i></a></li>
+                      </ul>
+                  </div>
+              </article>
+              <article class="event">
+                  <div class="nev">
+                      <h2><i class="fas fa-glass-cheers"></i>EVENT</h2>
+                      <ul class="newsi">
+                          <li><a href="#">- ’골든라벨’ 머그컵 증정<i class="fas fa-angle-right"></i></a></li>
+                          <li><a href="#">- 12월 당첨자 바로가기<i class="fas fa-angle-right"></i></a></li>
+                          <li><a href="#">- 홍보 ‘SNS 인증 이벤트’<i class="fas fa-angle-right"></i></a></li>
+                          <li><a href="#">- 할리스 멤버십 추천인 포인트 도입.<i class="fas fa-angle-right"></i></a></li>
+                          <li><a href="#">- 재활용품과 커피의 교환 이벤트.<i class="fas fa-angle-right"></i></a></li>
+                          <li><a href="#">- 자연 친화적인 사진을 SNS에 업로드 하시고 해시태그를 입력하세요<i class="fas fa-angle-right"></i></a></li>
+                      </ul>
+                  </div>
+              </article>
+              <div class="q1">
+                <article class="q">
+                  <a href="#" title="q">
+                    <i class="fas fa-laptop-house"></i>
+                    <h2>가맹점 문의</h2>  
+                  </a>
+                </article>
+                <article class="q">
+                  <a href="#" title="q">
+                    <i class="fas fa-phone-square"></i>
+                    <h2>고객센터</h2>
+                  </a>
+                </article>
+              </div>
+        </section>
+
+    </main>
+    <footer>
+        <a href="index.html"><i class="fas fa-angle-up"></i></a>
+        <address>법인명: (주) 케이지할리스에프앤비 대표자: 이종현 사업자등록번호 123-12-12345 통신판매업: 제1234-서울종로-1234호
+            주소 : 서울특별시 00 000 45, 5층(순화동, 케이지타워) 대표전화 : 02-1234-1234 (가맹문의 : 12-2345-6789)</address>
+        <div class="copyright">COPYRIGHT (C) KG HOLLYS F&B. All Rights Reserved.</div>
+        <i class="fab fa-facebook-square"></i><i class="fab fa-instagram"></i><i class="fab fa-youtube-square"></i>
+    </footer>
+    <script>
+      // Can also be used with $(document).ready()
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+          animation: "slide"
+          //animation: "fade"
+        });
+      });
+    </script>
+    <script>
+        var swiper = new Swiper(".new_wrapper", {
+          spaceBetween: 0,
+          effect: "slide", /*슬라이드효과 */
+          centeredSlides: false,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints:{
+            320:{
+                slidesPerView:1, //layout 2
+            },
+            768:{
+                slidesPerView:3,
+            },
+            1025:{
+                slidesPerView:4,
+            },
+          }
+        });
+      </script>
+      <script>
+        //로그인 버튼 누르면 함수를 실행하여 아래 내용 실행하기
+        
+            function login_Check(){
+        
+              //1. 사용자가 입력한 데이터(아이디, 패스워드) 변수에 담는다.
+              let id = document.getElementById('id').value;
+              let pw = document.getElementById('pw').value;
+        
+              console.log(id, pw);
+            
+              //조건문을 활용하여 아이디 'master' 패스워드 '1234'일 때 '인증성공' 틀리면 '인증실패'를 출력하세요
+            if(id=='master'){
+                if(pw=='1234'){
+                    alert('인증성공');
+                }else{
+                alert('비밀번호가 틀렸습니다.');
+                }
+            }else{
+                alert('아이디가 틀렸습니다.');
+            }
+            }
+          </script>
+</body>
+</html>
