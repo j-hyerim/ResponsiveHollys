@@ -5,7 +5,7 @@ body{
     font-family: "달서달링체";
     width: 100%;
     /* background-color: rgb(228, 218, 205); */
-    background-image: url(../img/bg0.jpg);
+    /* background-image: url(../img/bg0.jpg); */
 }
 .fade a{
     text-decoration: none;

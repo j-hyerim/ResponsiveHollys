@@ -326,6 +326,15 @@
                 alert('아이디가 틀렸습니다.');
             }
             }
+
+            $(function(){
+              let top_btn=$('i.fa-angle-up');
+              top_btn.click(function(e){
+                $("html,body").animate({scollTop:"0px"},500);
+               // return false;
+              });
+            })
           </script>
+          
 </body>
 </html>
